@@ -63,7 +63,7 @@
     <!-- going to attempt to add a pinned section here -->
     {{ $pages := where .Pages "Section" "pinned-post" }}
     {{ $pages = $pages.ByTitle }}
-    <section class="article-list--compact"></section>
+    <section class="article-list--compact">
         {{ range $pages.ByTitle }}
             {{ partial "category/category" . }}
         {{ end }}
