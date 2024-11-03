@@ -3,7 +3,6 @@
         <div class="section-card">
             <div class="section-details">
                 <h1 class="section-term">{{ .Title }}</h1>
-                <h3 class="section-count">{{ T "list.page" (len .Pages) }}</h3>
                 {{ with .Params.description }}
                     <h2 class="section-description">{{ . }}</h2>
                 {{ end }}
@@ -64,9 +63,9 @@
     <!-- going to attempt to add a pinned section here -->
     {{ $pages := where .Pages "Section" "pinned-post" }}
     {{ $pages = $pages.ByTitle }}
-    <section class="article-list--compact"></section>
+    <section class="article-list--compact">
         {{ range $pages.ByTitle }}
-            {{ partial "article/article" . }}
+            {{ partial "category/category" . }}
         {{ end }}
     </section>
 

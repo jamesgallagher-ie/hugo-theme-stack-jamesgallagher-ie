@@ -68,4 +68,17 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+            enabled: true 
+
+menu:
+    social:
+        - identifier: "mastodon"
+          name: "Mastodon"
+          url: https://jamesgallagher.social/@james
+          params:
+            icon: brand-mastodon
+        - identifier: "website"
+          name: "Webpage"
+          url: https://jamesgallagher.ie
+          params:
+            icon: world-www
