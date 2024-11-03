@@ -68,4 +68,4 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+            enabled: true 
