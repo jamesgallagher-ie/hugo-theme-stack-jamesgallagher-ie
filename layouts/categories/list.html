@@ -77,7 +77,7 @@
     {{ $pages = $pages.ByTitle }}
 
     <section class="article-list--compact">
-        {{ range $pages.ByTitle }}
+        {{ range $pages.ByDate }}
             {{ partial "article-list/compact" . }}
         {{ end }}
     </section>
